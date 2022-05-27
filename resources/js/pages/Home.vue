@@ -1,6 +1,7 @@
 <template>
-  <div class="home">
-      <h1>Home</h1>
+  <div class="home text-center w-75 rounded mx-auto pt-5">
+      <h3 class="mt-5">Benvenuto a</h3>
+      <h1>BoolPress</h1>
   </div>
 </template>
 
@@ -11,6 +12,16 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+div.home{
+    
 
+    h3{
+        font-size: 4rem;
+    }
+    h1{
+        font-size: 7rem;
+    }
+}
+   
 </style>

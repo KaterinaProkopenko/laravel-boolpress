@@ -1,5 +1,5 @@
 <template>
-    <main>
+    <main class="container bg-light rounded overflow-scroll">
         <router-view></router-view>
     </main>
 </template>
@@ -12,6 +12,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+    main{
+        height: 90vh;
+    }
 </style>

@@ -1,9 +1,7 @@
 <template>
-    <div class="container-fluid">
+    <div class="bg-success">
         <Header/>
         <Main/>
-
-        <h1 class="text-center py-2">Posts</h1>
 
         <!-- <PostList/> -->
     </div>
@@ -24,5 +22,5 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 </style>

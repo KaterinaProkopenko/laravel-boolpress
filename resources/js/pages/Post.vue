@@ -30,3 +30,9 @@
         props: ['post']
     }
 </script>
+
+<style lang="scss" scoped>
+    div.card{
+        border: 1px solid #bddcca;
+    }
+</style>

@@ -1,8 +1,8 @@
 <template>
-  <header class="p-3 bg-dark text-white">
-      <div class="container">
-          <div class="row">
-              <div class="col-12 d-flex justify-content-between">
+  <header class="bg-success text-white">
+      <div class="container h-100">
+          <div class="row h-100">
+              <div class="col-12 py-3 h-100 d-flex justify-content-between">
                     <div class="left-content">
                         <ul class="nav col-12 mb-2">
                             <li v-for="(navLink, index) in navLinks" :key="index">
@@ -53,6 +53,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+    header{
+        height: 10vh;
+    }
 </style>
