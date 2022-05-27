@@ -1,0 +1,40 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+div.my-card{
+    width: 540px;
+    height: 310px;
+
+    img{
+        height: 110px;
+        width: 100%;
+    }
+} 
+
+div.my-card-secondary{
+    img{
+        width: 400px;
+    }
+}
+
+div.add{
+    padding-left: 130px;
+}
+
+header.my-header{
+    height: 60px;
+    background-color: aquamarine;
+
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: 2rem;
+        margin: 0 1rem;
+    }
+}
