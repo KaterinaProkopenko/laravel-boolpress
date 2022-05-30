@@ -4,7 +4,7 @@
     <div class="my-card-secondary py-4 d-inline-block">
         <div class="row g-0">
             <div class="col-12 text-center">
-                <img src="{{$post->image}}" class="img-fluid rounded" alt="Current image">
+                <img src="{{ asset('storage/' . $post->image)}}" class="img-fluid rounded" alt="Current image">
             </div>
             <div class="col-8 mx-auto">
                 <div class="card-body">

@@ -23,8 +23,4 @@ export default {
 </script>
 
 <style>
-    div.contact-us{
-
-       
-    }
 </style>
