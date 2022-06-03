@@ -24,6 +24,9 @@ Route::middleware('auth') /* se registrato */
 ->group(function() {
     Route::get('/', 'HomeController@index')->name('home');
     Route::resource('posts', 'PostController');
+    Route::get('contact', 'MailController@contact')->name('contact');
+    Route::post('contact', 'MailController@sendMail')->name('sendContact');
+    Route::get('sended', 'MailController@sended')->name('sendedContact');
 });
 
 Route::get('/{any}', 'Guest\HomeController@index')->where('any','.*');

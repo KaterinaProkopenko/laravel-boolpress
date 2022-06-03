@@ -3,8 +3,15 @@
 @section('content')
     <div class="my-card-secondary py-4 d-inline-block">
         <div class="row g-0">
-            <div class="col-12 text-center">
-                <img src="{{ asset('storage/' . $post->image)}}" class="img-fluid rounded" alt="Current image">
+            <div class="col-12 text-center position-relative mx-5">
+                <div class="position-absolute start-0">
+                    <a href="{{route('admin.posts.index')}}"><-</a>
+                </div>
+                @if (str_starts_with($post->image, 'https://') || str_starts_with($post->image, 'http://'))
+                    <img src="{{$post->image}}" class="img-fluid rounded-start mb-2" alt="Current image">
+                @else
+                    <img src="{{asset('storage/' . $post->image)}}" class="img-fluid rounded-start mb-2" alt="Current image">
+                @endif
             </div>
             <div class="col-8 mx-auto">
                 <div class="card-body">

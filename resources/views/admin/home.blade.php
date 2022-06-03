@@ -15,7 +15,7 @@
                     <a href="{{route('admin.posts.index')}}">Posts</a>
                 </li>
                 <li class="list-group-item">
-                    <a href="#">A second item</a>
+                    <a href="{{route('admin.contact')}}">Get support</a>
                 </li>
                 <li class="list-group-item">
                     <a href="#">A third item</a>
